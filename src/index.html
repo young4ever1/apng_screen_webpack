@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+
+    <div id="screenAdapter">
+        <div id="root">
+            <div id="container_1">
+            </div>
+            <div id="container_2">
+                <!-- <p><span>朗新CPU空间</span><span></span></span><span>低碳园区</span></p> -->
+            </div>
+            <div id="container_3">
+                <div class="box">
+                    <p>一期占地面积</p>
+                    <p><span id="mu"></span><span>亩 </span> </p>
+                    <div class="box_bg"></div>
+                </div>
+                <div class="box">
+                    <p>一期建筑面积</p>
+                    <p><span id="mianji">2</span><span>万平方米</span> </p>
+                    <div class="box_bg"></div>
+                </div>
+                <div class="box">
+                    <p>一期预期容量 </p>
+                    <p><span id="rongliang">2</span><span>人</span> </p>
+                    <div class="box_bg"></div>
+                </div>
+                <div class="box">
+                    <p>一期入驻成员企业</p>
+                    <p><span id="qiye">2</span><span>家</span> </p>
+                    <div class="box_bg"></div>
+                </div>
+                <div class="box">
+                    <p>一期园区入驻人数</p>
+                    <p><span id="renshu">2</span><span>人</span> </p>
+                    <div class="box_bg"></div>
+                </div>
+            </div>
+            <div id="container_4">
+                <div class="box_1">
+                    <div class="one">
+                        <div class="one_left"></div>
+                        <div class="one_right">
+                            <p>在园人数</p>
+                            <p><span id="zh_zaiyuanrenshu">5686</span><span>人</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left"></div>
+                        <div class="one_right">
+                            <p>访客人数</p>
+                            <p><span id="zh_fangkerenshu">5686</span><span>人</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left"></div>
+                        <div class="one_right">
+                            <p>在园车辆</p>
+                            <p><span id="zh_zaiyuancheliang">5686</span><span>辆</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_2">
+                    <div class="one">
+                        <div class="one_left"></div>
+                        <div class="one_right">
+                            <p>亩均产值</p>
+                            <p><span id="zh_mujunchanzhi">5686</span><span>万元/亩</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left"></div>
+                        <div class="one_right">
+                            <p>亩均税收</p>
+                            <p><span id="zh_mujunshuishou">3723</span><span>万元/亩</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_3">
+                    <div class="nao_bg_1"></div>
+                    <div class="nao_bg_2"></div>
+                    <div class="container">
+                        <!-- <div class="circle"></div> -->
+                        <div class="borther">
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">访客<br>系统</p>
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">智慧停<br>车系统</p>
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">动环监<br>控系统</p>
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">安防<br>系统</p>
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">会议<br>系统</p>
+
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">餐厅<br>管理</p>
+
+                            </div>
+                            <div class="ball ball2" onmouseenter="onMouseGo()" onmouseout="onMouseMove()">
+                                <p class="name">资产管<br>理系统</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="back"></div>
+
+            </div>
+            <div id="container_5">
+                <div class="box_1">
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bg"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>年碳排放量</p>
+                            <p><span id="dt_nianpai">5863</span><span>吨</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bg"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>单位面积碳排放量</p>
+                            <p><span id="dt_jipai">8632</span><span>吨/平方米</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_2">
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bg"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>年碳减排量</p>
+                            <p><span id="dt_nianjian">5863</span><span>吨</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bg"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>人均碳排放量</p>
+                            <p><span id="dt_junpai">5863</span><span>吨/人</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_3">
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bag"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>碳中和率</p>
+                            <p><span id="dt_tanzhonghe">75</span><span>%</span></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bag"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>年SO₂减排</p>
+                            <p><span id="so2">1000</span><span>吨</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_4">
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bag"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>年节约标煤</p>
+                            <p><span id="dt_jieyuebiaomei">20000</span><span>吨标煤</span></p>
+                        </div>
+                     
+                    </div>
+                    <div class="one">
+                        <div class="one_left">
+                            <div class="one_left_bag"></div>
+                            <div class="one_left_icon"></div>
+                        </div>
+                        <div class="one_right">
+                            <p>年NO₂减排</p>
+                            <p><span id="no2">800</span><span>吨</span></p>
+                        </div>
+                    </div>
+                 </div>
+                <div class="back"></div>
+            </div>
+            <div id="container_6">
+                <div class="left">
+                    <div class="left_1">
+                        <p>年节能量</p>
+                        <div class="bg">
+                            <p id="dl_nianjieneng">9842</p>
+                            <p>吨标煤</p>
+                            <div class="bg_z"></div>
+                        </div>
+                    </div>
+                    <div class="left_2">
+                        <p>年能源消耗</p>
+                        <div class="bg">
+                            <p id="dl_nenghao">9842</p>
+                            <p>吨标煤</p>
+                            <div class="bg_z"></div>
+
+                        </div>
+                    </div>
+                    <div class="left_3">
+                        <p>年发电量</p>
+                        <div class="bg">
+                            <p id="dl_nianfadian">9842</p>
+                            <p>兆瓦时</p>
+                            <div class="bg_z"></div>
+
+                        </div>
+                    </div>
+                    <div class="left_4">
+                        <p>年用电量</p>
+                        <div class="bg">
+                            <p id="dl_nianyongdian">9842</p>
+                            <p>兆瓦时</p>
+                            <div class="bg_z"></div>
+                        </div>
+                    </div>
+                    <div class="left_5">
+
+                        <div class="bg">
+                            <p id="dl_xinnengyuan">9842</p>
+                            <p>%</p>
+                            <div class="bg_z"></div>
+                        </div>
+                    </div>
+                    <p>新能源消耗比重</p>
+                    <div class="background_left"></div>
+                </div>
+                <div class="right">
+                    <div class="right_top">
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <div class="icon_1"></div>
+                                <div class="icon_2"></div>
+                            </div>
+                            <div class="detail_word">
+                                <p><span id="dl_gdp">1163</span><span>吨标煤/万元</span></p>
+                                <p>单位GDP综合能耗</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <div class="icon_1"></div>
+                                <div class="icon_2"></div>
+                            </div>
+                            <div class="detail_word">
+                                <p><span id="dl_nengyuanchanchu">363</span><span>万元/吨标煤</span></p>
+                                <p>能源产出率</p>
+                            </div>
+                        </div>
+                        <div class="right_top_bag"></div>
+                    </div>
+                    <div class="right_bot">
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <div class="icon_1"></div>
+                                <div class="icon_2"></div>
+                            </div>
+                            <div class="detail_word">
+                                <p><span id="dl_danweimianji">913</span><span>吨标煤/平方米</span></p>
+                                <p>单位建筑面积能耗</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <div class="icon_1"></div>
+                                <div class="icon_2"></div>
+                            </div>
+                            <div class="detail_word">
+                                <p><span id="dl_renjunnenghao">563</span><span>吨标煤/人</span></p>
+                                <p>人均能源消耗量</p>
+                            </div>
+                        </div>
+                        <div class="right_top_bag"></div>
+                    </div>
+                </div>
+                <div class="background_6"></div>
+            </div>
+            <p class="word_1">数字机房</p>
+            <p class="word_2">太阳能热水器</p>
+            <p class="word_3">绿色建筑</p>
+            <p class="word_4">海绵城市</p>
+            <p class="word_5">充电桩</p>
+            <div class="word_6">
+                <p>光伏</p>
+                <p><span class="guangfu">1</span><span>兆瓦</span></p>
+            </div>
+            <div class="word_7">
+                <p>智慧停车</p>
+                <p><span>车位数:</span><span class="chewei">654</span><span>个</span></p>
+            </div>
+            <div class="word_8">
+                <p>储能</p>
+                <p><span class="chuneng">630</span><span><b>千瓦/1兆瓦时</b></span></p>
+            </div>
+            <div class="chongdian">
+                <p><span>交流充电桩:</span> <span class="c_1"></span><span>台</span></p>
+                <p><span>直流充电桩:</span><span class="c_2"></span><span>台</span></p>
+                <p><span>V2G:</span><span class="c_3"></span><span>台</span></p>
+            </div>
+            <div class="b3lb"></div>
+            <div class="b3rb"></div>
+        </div>
+        <video width="100%" autoplay="autoplay" loop="loop" muted="muted">
+            <source src="http://localhost:8081/image/video.mp4" type="video/mp4">
+            </source>
+        </video>
+    </div>
+
+</body>
+<script>
+    var items = document.querySelectorAll('.ball');
+    console.log();
+    // items[0].style['animation-delay'] = '-5s,0s,0s';
+    // items[0].querySelector('.item__circle').style['transform'] = 'scale(1.5)';
+    //
+    for (var i = 0; i < items.length; i++) {
+        (function (i) {
+            items[i].style['animation-delay'] = (-5) - 2.75 * i + 's,' + (-2.75 * i) + 's,' + (-2.75 * i) + 's'
+        })(i);
+        console.log(items[0])
+    }
+    function onMouseGo() {
+        // document.querySelectorAll('.ball').classList.add('active')
+        for (var i = 0; i < items.length; i++) {
+            (function (i) {
+                items[i].classList.add('active')
+            })(i);
+        }
+    }
+    function onMouseMove() {
+        // document.getElementsByClassName('ball').classList.remove('active')
+        for (var i = 0; i < items.length; i++) {
+            (function (i) {
+                items[i].classList.remove('active')
+            })(i);
+        }
+    }
+    // function launchFullscreen(element) {
+    //     console.log(element.requestFullscreen)
+    //     if (element.requestFullscreen) {
+    //         element.requestFullscreen()
+    //     } else if (element.mozRequestFullScreen) {
+    //         element.mozRequestFullScreen()
+    //     } else if (element.msRequestFullscreen) {
+    //         element.msRequestFullscreen()
+    //     } else if (element.webkitRequestFullscreen) {
+    //         element.webkitRequestFullScreen()
+    //     }
+    // }
+
+    // launchFullscreen(document.documentElement)
+
+    // 访客系统、智慧停车系统、动环监控系统、
+    // 安防系统、会议系统、餐厅管理、资产管理系统、
+    // 物业管理系统、空间管理系统、
+    // 物联网平台、光储充一体化管理系统、
+    // 园区微网管理系统、能效管理系统、双碳管理系统
+    let sysArr1 = [
+        {
+            name1: '访客',
+            name2: '系统'
+        },
+        {
+            name1: '智慧停',
+            name2: '车系统'
+        },
+        {
+            name1: '动环监',
+            name2: '控系统'
+        },
+        {
+            name1: '安防',
+            name2: '系统'
+        },
+        {
+            name1: '会议',
+            name2: '系统'
+        },
+        {
+            name1: '餐厅管',
+            name2: '理系统'
+        },
+        {
+            name1: '资产管',
+            name2: '理系统'
+        }
+    ]
+    let sysArr2 = [
+        {
+            name1: '物业管',
+            name2: '理系统'
+        },
+        {
+            name1: '空间管',
+            name2: '理系统'
+        },
+        {
+            name1: '物联网',
+            name2: '  平台'
+        },
+        {
+            name1: '光储充一体',
+            name2: '化管理系统'
+        },
+        {
+            name1: '园区微网',
+            name2: '管理系统'
+        },
+        {
+            name1: '能效管',
+            name2: '理系统'
+        },
+        {
+            name1: '双碳管',
+            name2: '理系统'
+        }
+    ]
+    let sys = [];
+    sys = sysArr1;
+    setInterval(() => {
+        sys = sysArr2;
+        setName()
+        // onMouseGo()
+    }, 5000)
+    setInterval(() => {
+        sys = sysArr1;
+        setName()
+        // onMouseMove()
+    }, 10000)
+    function setName() {
+        let nameList = $('.name');
+        for (let i = 0; i < sys.length; i++) {
+            nameList[i].innerHTML = sys[i].name1 + '<br>' + sys[i].name2;
+        }
+    }
+    setName()
+</script>
+
+</html>

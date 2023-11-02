@@ -1,0 +1,148 @@
+/*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/ /*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/ /*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/ /*第一层*/
+@keyframes animX {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 500px;
+  }
+}
+@keyframes animY {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.4);
+    z-index: 0;
+  }
+  50% {
+    transform: scale(1);
+    z-index: 3;
+  }
+  100% {
+    transform: scale(0.5);
+    z-index: 0;
+  }
+}
+
+.ball {
+  width: 105px;
+  height: 129px;
+  /*background-color: #f66;*/
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: url(../image/shadow1.png) no-repeat scroll 100% 100%;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%; */
+  line-height: 120px;
+  z-index: 3;
+  /*动画执行一次所需时间*/
+  animation-duration: 10s, 10s, 20s;
+  /*动画以何种运行轨迹完成一个周期*/
+  animation-timing-function: cubic-bezier(0.36, 0, 0.64, 1);
+  /*动画播放次数,无线循环播放*/
+  animation-iteration-count: infinite;
+  /*是否轮流反向播放动画 alternate:正向播放*/
+  animation-direction: alternate;
+  animation-name: animX, animY, scale;
+}
+
+
+#lopp {
+  width: 500px;
+  height: 300px;
+  border: 2px solid #999;
+  /* border-radius: 50%; */
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+/*鼠标进入停止*/
+.active {
+  animation-play-state: paused;
+}
+/*第二层*/
+@keyframes anim2X {
+  0% {
+    left: -120px;
+  }
+  100% {
+    left: 1200px;
+  }
+}
+@keyframes anim2Y {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 250px;
+  }
+}
+/* .ball .name{} */
+.ball2 {
+  /* z-index: 999; */
+  width: 700px;
+  height: 470px;
+  /*background-color: #f66;*/
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  /* font-weight: bold; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../image/zhihui/zhihuiguanli.png") no-repeat scroll 100% 100%;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  /*line-height: 120px;*/
+  /*动画执行一次所需时间*/
+  animation-duration: 10s, 10s, 20s;
+  /*动画以何种运行轨迹完成一个周期*/
+  animation-timing-function: cubic-bezier(0.36, 0, 0.64, 1);
+  /*动画播放次数,无线循环播放*/
+  animation-iteration-count: infinite;
+  /*是否轮流反向播放动画 alternate:正向播放*/
+  animation-direction: alternate;
+  animation-name: anim2X, anim2Y, scale;
+  animation-duration: 10s, 10s, 20s;
+}
+#lopp2 {
+  width: 300px;
+  height: 150px;
+  /* border: 2px solid #999; */
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 80px;
+}
+.container {
+  position: relative;
+  transform: rotateX(15deg);
+  width: 1750px;
+  height: 610px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 19; */
+} /*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/ /*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/ /*此代码非源码，仅为演示用，下载源码请到：HTTP://WWW.BOOTSTrapmb.com*/
+
+
+
+
+.ball p{
+  line-height: 60px;
+  text-align: center;
+}
